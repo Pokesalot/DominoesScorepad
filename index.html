@@ -1,12 +1,18 @@
 <html>
     <head>
         <script src="scorepad.js"></script>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div id="floating-window" style="position: fixed; top: 20px; right: 20px; background-color: white; border: 1px solid black; padding: 10px; box-shadow: 0px 0px 10px rgba(0,0,0,0.5);">
-            <p>This is a scorepad for dominoes</p>
-            <button onclick="getPlayers()">Start game</button>
+        <div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+            <div id="MainMenu" onclick="getPlayers();" style="background-color: lightgreen; width: 40%; height: 40%; border: 1px solid black; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                <h1 style="text-align: center;">Mexican Train Dominoes Scorekeeper Application 9000, revision 1, subrevision 4, an independently contracted scorepad for my sister.</h1>
+                <h2>Click here to start a new game!</h2>
+            </div>
+            <div id="SetNumPlayers" style="background-color: lightyellow; width: 40%; height: 40%; border: 1px solid black; display: none; flex-direction: column; justify-content: center; align-items: center;">
+                <h1 style="text-align: center;">How many players are there?</h1>
+                <input type="text" pattern="[0-9]*" id="numPlayers" style="width: 50px; height: 30px; font-size: 20px;"></input>
+            </div>
         </div>
-        
     </body>
 </html>
