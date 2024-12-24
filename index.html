@@ -11,7 +11,12 @@
             </div>
             <div id="SetNumPlayers" style="background-color: lightyellow; width: 40%; height: 40%; border: 1px solid black; display: none; flex-direction: column; justify-content: center; align-items: center;">
                 <h1 style="text-align: center;">How many players are there?</h1>
-                <input type="text" inputmode="numeric" pattern="[0-9]*" id="numPlayers" style="width: 50px; height: 30px; font-size: 20px;"></input>
+                <input type="text" inputmode="numeric" pattern="[0-9]*" id="numPlayers" style="width: 50px; height: 30px; font-size: 20px;" onfocusout="BuildPlayerTable();"></input>
+            </div>
+            <div id="ScoreboardDiv"style="background-color: lightyellow; width: 40%; height: 40%; border: 1px solid black; display: none; flex-direction: column; justify-content: center; align-items: center;">
+                <table id="ScoreTable">
+                    
+                </table>
             </div>
         </div>
     </body>
